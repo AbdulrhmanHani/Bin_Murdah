@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+nav {
+  background-image: linear-gradient(
+    120deg,
+    rgb(149, 6, 82),
+    rgb(84, 56, 4)
+  ) !important;
+
+  font-size: 20px !important;
+}
+/* Start scroll top */
+.scroll-btn {
+  position: fixed;
+  right: 20px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 50%;
+  font-size: 25px;
+  transition: 0.5s bottom ease-in-out;
+  bottom: -50px;
+  cursor: pointer;
+}
+.scroll-btn.active {
+  bottom: 20px;
+}
+/* End scroll top */
+/* Start form from add customer page */
+.form {
+  position: relative;
+  padding: 20px;
+  width: 80%;
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+.form form h2 {
+  text-align: center;
+}
+.form form label {
+  font-size: 18px;
+  font-weight: 400;
+}
+.form form input {
+  outline: none;
+  padding: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 20px;
+  margin: 10px 0;
+  width: 100%;
+}
+.form form div select {
+  margin-left: 15px;
+}
+.form form select {
+  outline: none;
+  border: 1px solid #ced4da;
+  padding: 8px;
+  font-size: 20px;
+  color: black;
+  margin: 10px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.form form select option {
+  padding: 10px 0;
+}
+.form form span {
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f4b400;
+  color: #fff;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 3px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.form form textarea {
+  height: auto;
+  resize: none;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+.form form button {
+  padding: 10px;
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  left: 0;
+  background-color: #00a6dd;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+.form form input:focus,
+.form form select:focus,
+.form form textarea:focus {
+  outline: 3px solid #86b7fe;
+}
+.phones {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.phones label {
+  margin: 0 20px;
+}
+hr {
+  margin-bottom: 30px;
+}
+/* End form from add customer page */
+/* Start Customers Data  */
+.parent-customers-data h2 {
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 35px 0;
+  width: 80%;
+  margin: 40px auto;
+  padding: 5px 0;
+}
+.parent-customers-data select {
+  outline: none;
+  border: 1px solid #ced4da;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.parent-table {
+  overflow-x: auto;
+}
+/* End Customers Data  */
+/* Mobile Size */
+@media (max-width: 768px) {
+  .parent-customers-data select {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .form form select {
+    padding: 5px;
+    font-size: 15px;
+  }
+}

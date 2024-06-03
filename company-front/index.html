@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Company name | الصفحة الرئيسية</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-5" href="./index.html">اسم الشركه</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./addCustomer.html"
+                >اضافة عميل</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >اسم المستخدم</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./createPost.html"
+                ><i class="fas fa-globe" style="font-size: 28px"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fas fa-user" style="font-size: 28px"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Customers Data -->
+    <div class="parent-customers-data">
+      <h2>بيانات العملاء</h2>
+      <select name="" id="">
+        <option value="" selected>نوع العميل</option>
+      </select>
+      <select name="" id="">
+        <option value="" selected>المندوبين</option>
+      </select>
+      <select name="" id="">
+        <option value="" selected>الرتبة</option>
+      </select>
+      <select name="" id="">
+        <option value="" selected>الاستمرارية</option>
+      </select>
+      <select name="" id="">
+        <option value="" selected>مكانة المباشر</option>
+      </select>
+      <select name="" id="">
+        <option value="" selected>الملاحظات</option>
+      </select>
+
+      <button class="btn btn-info text-light mx-3" onclick="window.print()">
+        طباعة
+      </button>
+    </div>
+
+    <div class="container parent-table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">نوع العميل</th>
+            <th scope="col">المندوب</th>
+            <th scope="col">اسم العميل</th>
+            <th scope="col">الرتبة</th>
+            <th scope="col">الاستمرارية</th>
+            <th scope="col">المباشر</th>
+            <th scope="col">مكانة المباشر</th>
+            <th scope="col">رقم الجوال</th>
+            <th scope="col">ملاحظات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>شركة</td>
+            <td>نور</td>
+            <td>كريم</td>
+            <td>مميز جدا</td>
+            <td>دائم</td>
+            <td>احمد</td>
+
+            <td>محاسب</td>
+            <td>
+              <div>
+                <a href="https://wa.me/201553106683" class="whatsapp"
+                  ><img src="./img/whatsapp.svg" alt="" /></a
+                ><span> 546872130</span>
+              </div>
+              <div>
+                <a href="" class="whatsapp"
+                  ><img src="./img/whatsapp.svg" alt="" /></a
+                ><span> 546872130</span>
+              </div>
+            </td>
+
+            <td>....</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>شركة</td>
+            <td>نور</td>
+            <td>كريم</td>
+            <td>مميز جدا</td>
+            <td>دائم</td>
+            <td>احمد</td>
+            <td>محاسب</td>
+            <td>
+              <div>
+                <a href="" class="whatsapp"
+                  ><img src="./img/whatsapp.svg" alt="" /></a
+                ><span> 546872130</span>
+              </div>
+            </td>
+
+            <td>....</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- End Customers Data -->
+    <!-- scroll Top -->
+    <div class="scroll-btn">
+      <i class="fa fa-angle-double-up"></i>
+    </div>
+    <!-- javaScript -->
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

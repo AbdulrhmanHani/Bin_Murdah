@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Css file -->
+    <link rel="stylesheet" href="./css/posts.css" />
+    <title>Company name | المنشور</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-5" href="./index.html">اسم الشركه</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./addCustomer.html"
+                >اضافة عميل</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >اسم المستخدم</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./createPost.html"
+                title="إنشاء منشورات"
+                ><i class="fas fa-globe" style="font-size: 28px"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fas fa-user" style="font-size: 28px"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Post -->
+    <div class="posts-parent">
+      <div class="content">
+        <div id="posts-child">
+          <div class="post-content">
+            <h4>Abdullah Taha</h4>
+            <span class="date-post">26-3-2022 10:00pm</span>
+            <p class="post-text">زيارة بعض الاشخاص المهمة يوم الاربعاء</p>
+            <div class="reply">
+              <span class="user-comment">Abdullah</span>
+              <p class="comment-post">حسنا</p>
+              <span class="user-comment">Abdelrahman</span>
+              <p class="comment-post">تمام</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form id="form">
+      <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      <input type="text" placeholder="الرد علي المنشور" />
+      <input type="file" name="" id="" />
+    </form>
+    <!-- End Post -->
+    <!-- javaScript -->
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

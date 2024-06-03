@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Css file -->
+    <link rel="stylesheet" href="./css/posts.css" />
+    <title>Company name | إنشاء منشورات</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-5" href="./index.html">اسم الشركه</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./addCustomer.html"
+                >اضافة عميل</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >اسم المستخدم</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./createPost.html"
+                ><i class="fas fa-globe" style="font-size: 28px"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fas fa-user" style="font-size: 28px"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Create Post -->
+    <div class="posts-parent">
+      <div class="sidebar">
+        <a href="./createPost.html"><h2>إنشاء منشورات</h2></a>
+        <div class="users">
+          <a href="./posts.html"><h3 class="user">Abdullah taha</h3></a>
+          <a href="./posts.html"><h3 class="user">Abdelrahmen hany</h3></a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="post">
+          <button class="create-post">إنشاء منشور</button>
+          <form>
+            <select name="" id="" class="select-post">
+              <option selected>جميع الأشخاص</option>
+            </select>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              class="textarea-post"
+            ></textarea>
+            <button type="submit" class="save-post">أضف المنشور</button>
+          </form>
+        </div>
+        <button class="cancel-post"><i class="fas fa-angle-up"></i></button>
+      </div>
+    </div>
+    <!-- End Create Post -->
+
+    <!-- javaScript -->
+    <script>
+      //  Create Post Event Click
+      const createPost = document.querySelector(".create-post");
+      const cancelPost = document.querySelector(".cancel-post");
+      createPost.onclick = function () {
+        document.querySelector(".post").style.height = "400px";
+        cancelPost.style.display = "block";
+      };
+      // cancel post
+      cancelPost.addEventListener("click", () => {
+        document.querySelector(".post").style.height = "80px";
+        cancelPost.style.display = "none";
+      });
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Company name | إضافة عميل</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-5" href="./index.html">اسم الشركه</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >اسم المستخدم</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./createPost.html"
+                ><i class="fas fa-globe" style="font-size: 28px"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fas fa-user" style="font-size: 28px"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Form -->
+    <div class="form">
+      <form class="add-customer">
+        <h2>أضف بيانات العميل</h2>
+        <label for="customer-name">اسم العميل:</label>
+        <div>
+          <input type="text" id="customer-name" />
+          <label for="customer-type">نوع العميل:</label>
+          <select name="" id="customer-type">
+            <option value="">شركة</option>
+            <option value="">فرد</option>
+            <option value="">مقاول</option>
+          </select>
+          <label for="customer-continuity">استمرارية العميل:</label>
+          <select name="" id="customer-continuity">
+            <option value="">داثم</option>
+            <option value="">شبه داثم</option>
+            <option value="">مؤقت</option>
+          </select>
+          <label for="customer-rank">رتبة العميل:</label>
+          <select name="" id="customer-rank">
+            <option value="">مميز جدا</option>
+            <option value="">مميز</option>
+            <option value="">عادي</option>
+            <option value="">ضعيف</option>
+          </select>
+          <label for="delegate-name">اسم المندوب:</label>
+          <select name="" id="delegate-name">
+            <option value="">عبدالله</option>
+            <option value="">ابراهيم</option>
+          </select>
+          <label for="notes"> الملاحظات:</label>
+          <select name="" id="notes">
+            <option value="">زيادة ف مرتب احمد</option>
+          </select>
+        </div>
+        <span title="إضافة اسم مباشر"><i class="fas fa-plus"></i></span>
+
+        <div>
+          <label for="direct-name"> اسم المباشر الاول :</label>
+          <input type="text" id="direct-name" />
+          <label for="Job-name">مكانة المباشر:</label>
+          <select name="" id="Job-name">
+            <option value="">محاسب</option>
+          </select>
+          <div class="phones">
+            <label for="phone">رقم الجوال:</label>
+            <input type="tel" id="phone" />
+            <label for="phone">رقم اخر (اختياري):</label>
+            <input type="tel" id="phone" />
+            <label for="phone">رقم اخر (اختياري):</label>
+            <input type="tel" id="phone" />
+          </div>
+          <hr color="grey" />
+          <div class="box-direct-name"></div>
+        </div>
+        <label for="notes">ملاحظات:</label>
+        <textarea name="" id="notes" cols="30" rows="4"></textarea>
+        <button type="submit">حفظ البيانات</button>
+      </form>
+    </div>
+    <!-- End Form -->
+    <!-- javaScript -->
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
